@@ -1,2 +1,24 @@
-<h1>Pags#pag2</h1>
+<% content_for :footer do %>
+	<h1>Footer</h1>
+	<% end %>
+
+	<h1>Pags#pag2</h1>
 <p>Find me in app/views/pags/pag2.html.erb</p>
+
+
+<table class="table">
+<% @users.each do |u| %>
+<tr>
+<td><%= u %></td>
+</tr>
+<% end %>
+</table>
+
+<button id="outside">Clic Aquí</button>
+
+<script>
+$("#outside").click(function(e) {
+    e.preventDefault();
+    $.backstretch('http://dl.dropbox.com/u/515046/www/outside.jpg');
+});
+</script>

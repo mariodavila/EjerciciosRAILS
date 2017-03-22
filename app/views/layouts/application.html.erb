@@ -41,13 +41,18 @@
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
+        <li>
+        	<%= link_to "Pag3", pags_pag3_path %>
+        </li>
         
 
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-    <%= yield %>
+<div class="container">
+  <%= yield %>
+</div>
+    
   </body>
 </html>
